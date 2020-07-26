@@ -1,0 +1,62 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+$fa-font-path: '../webfonts';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import './custom.scss';
+
+// Admin Lte
+@import '~admin-lte/dist/css/adminlte.css';
+
+
+
+@import '../../public/css/buttons.dataTables.min.css';
+@import '../../public/css/jquery.dataTables.css';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+
+.flash{
+	position: fixed;
+	top:70px;
+	z-index:9999;
+	right:40px;
+}
+
+
+
+.router-link-exact-active{
+	background: #9424e1;
+	color: #fff !important;
+}
+
+.breadcrumb-item .router-link-exact-active {
+    background: none;
+    color: #3492dc !important;
+}
+
+@media print{
+	.navbar{
+		display:none
+	}
+	.main-footer{
+		display:none
+	}
+	.main-sidebar{
+		display:none
+	}
+	.div-button{
+		display:none
+	}
+	
+}
+@page{
+	margin:0;
+}
