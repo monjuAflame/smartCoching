@@ -17,7 +17,6 @@ use App\User;
 Route::get('/admin', function () {
 	$users = User::get();
     return view('auth.login',compact('users'));
-
 });
 
 Auth::routes();

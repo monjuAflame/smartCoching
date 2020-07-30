@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Events\ChatAdminMessage;
 use App\Model\ChatAdmin;
 use Illuminate\Http\Request;
 use App\User;
@@ -67,6 +68,7 @@ class ChatAdminController extends Controller
                 'to'=>$request->user_id,
                 'type'=>1
             ]);
+            broadcast(new ChatAdminMessage($message));
             return response()->json($message,200);
         }
         return abort(404);
