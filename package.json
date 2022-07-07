@@ -32,7 +32,7 @@
         "jszip": "^3.3.0",
         "laravel-echo": "^1.8.0",
         "laravel-vue-pagination": "^2.3.1",
-        "moment": "^2.24.0",
+        "moment": "^2.29.4",
         "pdfmake": "^0.1.65",
         "pusher-js": "^6.0.3",
         "sprintf-js": "^1.1.2",
